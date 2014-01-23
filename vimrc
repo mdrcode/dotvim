@@ -1,4 +1,4 @@
-call pathogen#infect()
+execute pathogen#infect()
 
 let python_highlight_all=1
 
