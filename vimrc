@@ -6,15 +6,20 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
+Bundle 'chrisbra/csv.vim'
 Bundle 'fs111/pydoc.vim'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'klen/python-mode'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
+Bundle 'mbbill/undotree'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-characterize'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Valloric/YouCompleteMe'
+Bundle 'valloric/YouCompleteMe'
 
 let python_highlight_all=1
 
@@ -31,14 +36,14 @@ let g:pymode_rope_completion = 0
 
 let g:gist_open_browser_after_post = 1
 
+set ruler
+set laststatus=2
 set statusline+=%{SyntasticStatuslineFlag()}
 
 set history=9999
 set undolevels=9999
 
 set so=7
-
-set ruler
 
 set hlsearch
 set incsearch
