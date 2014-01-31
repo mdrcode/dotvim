@@ -6,6 +6,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'chrisbra/csv.vim'
@@ -53,8 +54,13 @@ filetype indent on
 
 syntax on
 
-set guioptions-=T
-set guifont=Menlo:h13
+if has('gui_running')
+    set background=light
+    colorscheme solarized
+
+    set guioptions-=T
+    set guifont=Menlo:h13
+endif
 
 set noeb vb t_vb=
 au GUIENTER * set vb t_vb=
