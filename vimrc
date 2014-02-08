@@ -26,14 +26,18 @@ let python_highlight_all=1
 
 let g:pymode_virtualenv = 1
 
-let g:pymode_lint = 1
-let g:pymode_lint_on_fly = 1
-
 let g:pymode_folding = 0
 
+let g:pymode_lint = 1
+let g:pymode_lint_on_fly = 1
 let g:pymode_lint_cwindow = 0
 
-let g:pymode_rope_completion = 0
+let g:pymode_rope = 1
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_regenerate_on_write = 1
+let g:pymode_rope_autoimport = 1
+
+let g:pymode_rope_rename_bind = '<C-c>rr'
 
 let g:gist_open_browser_after_post = 1
 
